@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sum ecx classes</title>
+</head>
+<body>
+
+    <div id="base_form">
+        <form>
+            <h1>Get your dream car</h1>
+            <select name="class" id="user_class_name"> select car type:
+                <option value="Suv">Suv</option>
+                <option value="Motorbike">Motorbike</option>
+                <option value="Electrical">Electrical</option>
+            </select>
+            <label for="numOfWheels">Enter how many wheels:</label>
+            <input type="number" name="numOfWheels" id="wheel" min="2"><br><br>
+    
+            <label for="engineCapacity">Enter the car engine Capacity:</label>
+            <input type="number" name="engineCapacity" id="engien" min="125"><br><br>
+    
+            <label for="carcolor">choose the car color:</label>
+            <input type="color" name="carcolor" id="car_color"><br><br>
+    
+            <label for="carlable">Enter the car lable:</label>
+            <input type="text" name="carlable" id="car_lable"><br><br>
+        </form>
+        <button id="form_btn" onclick="userClassChoise()">SEND</button>
+    </div>
+
+    <table id="base_table">
+        <thead id="table_head"><tr></tr></thead>
+        <tbody><tr id="table_body"></tr></tbody>
+    </table>
+
+
+
+    <script src="/classes/carClass.js"></script>
+</body>
+</html>
